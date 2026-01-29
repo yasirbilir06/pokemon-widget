@@ -1,50 +1,52 @@
 # Pokémon Widget
 
-iOS ana ekran widget’ı: Uygulama içinde seçtiğiniz Pokémon, widget’ta görünür.
+An iOS home screen widget: the Pokémon you select in the app appears on the widget.
 
-## Ne yapıyorum?
+## What does it do?
 
-- **Ana uygulama:** Pikachu, Charmander ve Ball arasından birine dokunuyorsunuz.
-- **Widget:** En son dokunduğunuz Pokémon, ana ekrandaki widget’ta gösteriliyor.
-- **Paylaşım:** App Group ile uygulama ve widget aynı veriyi kullanıyor; seçim anında widget güncelleniyor.
+- **Main app:** You tap one of Pikachu, Charmander, or Ball.
+- **Widget:** The last Pokémon you tapped is shown on the home screen widget.
+- **Sharing:** The app and widget use the same data via an App Group, so the widget updates as soon as you make a selection.
 
-Yani tek dokunuşla hem uygulama içinde seçim yapıyorsunuz hem de widget’ta en son seçtiğiniz Pokémon’u sergiliyorsunuz.
+One tap in the app both saves your choice and shows that Pokémon on the widget.
 
-## Özellikler
+## Features
 
-- SwiftUI ile modern arayüz
-- WidgetKit ile iOS ana ekran widget’ı
-- App Group ile uygulama ↔ widget veri paylaşımı
-- Seçim sonrası widget zaman çizelgesinin anında yenilenmesi
+- Modern UI with SwiftUI
+- iOS home screen widget with WidgetKit
+- App Group for app ↔ widget data sharing
+- Widget timeline refreshes immediately after a selection
 
-## Ekran görüntüleri
+## Screenshots
 
-Çalışmayı görmek için `screen/` klasöründeki simülatör ekran görüntülerine bakabilirsiniz:
+Simulator screenshots are in the `screen/` folder:
 
-- **Uygulama:** Listedeki Pokémon’lara dokunup seçim yapıyorsunuz.
-- **Widget:** Ana ekranda en son seçtiğiniz Pokémon görünüyor.
+- App screen (list + selection)
+- Widget on the home screen (selected Pokémon)
 
-## Proje yapısı
+Open the **screen/** folder in the repo to see the app in action.
 
-- **PokemonWidget/** — Ana uygulama (liste, seçim, App Group’a yazma)
-- **WidgetPokemon/** — Widget extension (App Group’tan okuma, widget UI)
-- **screen/** — Ekran görüntüleri
+## Project structure
 
-## Gereksinimler
+- **PokemonWidget/** — Main app (list, selection, writing to App Group)
+- **WidgetPokemon/** — Widget extension (reading from App Group, widget UI)
+- **screen/** — Screenshots
+
+## Requirements
 
 - Xcode 15+
 - iOS 17+
 - Swift 5.9+
 
-## Kurulum
+## Setup
 
-1. Repoyu klonlayın:  
+1. Clone the repo:  
    `git clone https://github.com/yasirbilir06/pokemon-widget.git`
-2. `PokemonWidget.xcodeproj` dosyasını Xcode ile açın.
-3. Simülatör veya cihaz seçip **Run** (⌘R) ile çalıştırın.
-4. Ana ekrana widget ekleyin: **Pokémon Widget** → istediğiniz boyutu seçin.
-5. Uygulamayı açıp bir Pokémon’a dokunun; widget’ta aynı Pokémon görünecektir.
+2. Open `PokemonWidget.xcodeproj` in Xcode.
+3. Choose a simulator or device and run with **Run** (⌘R).
+4. Add the widget to the home screen: **Pokémon Widget** → choose the size you want.
+5. Open the app, tap a Pokémon; the same one will appear on the widget.
 
 ---
 
-**Geliştirici:** Yasir Bilir
+**Developer:** Yasir Bilir

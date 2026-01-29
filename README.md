@@ -19,12 +19,15 @@ One tap in the app both saves your choice and shows that Pokémon on the widget.
 
 ## Screenshots
 
-Simulator screenshots are in the `screen/` folder:
+**App — Pokémon list & selection**
 
-- App screen (list + selection)
-- Widget on the home screen (selected Pokémon)
+![App screen](screen/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-01-29%20at%2016.38.02.png)
 
-Open the **screen/** folder in the repo to see the app in action.
+**Widget on home screen**
+
+![Widget](screen/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-01-29%20at%2017.01.57.png)
+
+![Widget](screen/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-01-29%20at%2017.02.12.png)
 
 ## Project structure
 
